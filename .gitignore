@@ -1,0 +1,6 @@
+.history
+node_modules/
+opencv.js
+*.jpg
+*.mp4
+.env

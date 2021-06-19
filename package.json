@@ -1,0 +1,21 @@
+{
+  "name": "motion-detect-js",
+  "version": "0.1.0",
+  "description": "Detect motion for RTSP stream, using FFmpeg and OpenCV",
+  "keywords": ["motion", "detect", "ffmpeg", "opencv", "rtsp", "camera"],
+  "homepage": "https://github.com/cver/motion-detect",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --trace-uncaught index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Son Dang <sondt.2709@gmail.com> (https://seandang.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "jimp": "^0.16.1",
+    "minimist": "^1.2.5"
+  }
+}
