@@ -9,15 +9,15 @@ Therefore, I make a function to do that.
 This function include 2 handler
 
 ### rtsp_handler.js
-This file will grab single frame from RTSP stream
-It use FFmpeg to do
+This file will grab single frame from RTSP stream.
+It use FFmpeg to do.
 
 ### img_handler.js
-This file will receive 2 images and detect the difference
-It use OpenCV to do
+This file will receive 2 images and detect the difference.
+It use OpenCV to do.
 
 ### index.js
-This is the entry
+This is the entry.
 
 ## Get started
 Download [opencv.js](https://docs.opencv.org/4.5.2/opencv.js) file (I used version 4.5.2) and put it to this folder
@@ -31,7 +31,6 @@ npm start -- --url "<your_url>"
 ```
 
 You also can create `.env` file, put `URL` variable to there and run `npm start`.
-
 In the case you're using C200 camera, the URL should be `rtsp://<usr>:<pwd>@<ip>:554/stream1`.
 
 ## What's next
