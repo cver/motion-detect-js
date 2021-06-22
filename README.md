@@ -23,10 +23,6 @@ This file will receive 2 images and detect the difference.
 
 It use OpenCV to do
 
-### index.js
-
-This is the entry
-
 ## Get started
 
 Download [opencv.js](https://docs.opencv.org/4.5.2/opencv.js) file (I used version 4.5.2) and put it to this folder
@@ -36,6 +32,7 @@ Run `npm install`
 Provide the `base.jpg` to this folder, It will be treated as the first image, the second image will be compared to the first and find the difference
 
 ## Usage
+### Commandline
 
 Just enter the following command
 
@@ -48,6 +45,30 @@ npm start -- --url "<your_url>"
 You also can create `.env` file, put `URL` variable to there and run `npm start`.
 
 In the case you're using C200 camera, the URL should be `rtsp://<usr>:<pwd>@<ip>:554/stream1`.
+
+### Function
+For example, create a js file (i.e app.js) at parent folder
+
+Put this script to file and adjust URL, smart-cam-js folder path
+
+```js
+const fs = require('fs')
+const smartCam = require('./smart-cam-js')
+
+const image = fs.readFileSync('./base.jpg')
+smartCam(image, 'rtsp://usr:pwd@192.168.1.2/stream1').then(() => {
+    console.log('SUCCESS !!!')
+}).catch((err) => {
+    console.log(err)
+    console.log('ERROR !!!')
+})
+```
+
+Put a image file to folder (base.jpg)
+
+Open terminal at your js file path (app.js)
+
+Exec `node app.js` and look output
 
 ## What's next
 
