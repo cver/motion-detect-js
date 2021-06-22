@@ -49,7 +49,7 @@ In the case you're using C200 camera, the URL should be `rtsp://<usr>:<pwd>@<ip>
 ### Function
 For example, create a js file (i.e app.js) at parent folder
 
-Put this script to file and adjust URL, smart-cam-js folder path
+Put this script to file and adjust URL, motion-detect-js folder path
 
 ```js
 const fs = require('fs')
