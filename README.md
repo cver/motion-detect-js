@@ -53,7 +53,7 @@ Put this script to file and adjust URL, smart-cam-js folder path
 
 ```js
 const fs = require('fs')
-const smartCam = require('./smart-cam-js')
+const smartCam = require('./motion-detect-js')
 
 const image = fs.readFileSync('./base.jpg')
 smartCam(image, 'rtsp://usr:pwd@192.168.1.2/stream1').then(() => {
